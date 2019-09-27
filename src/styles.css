@@ -1,8 +1,27 @@
-/*html,
+html,
 body {
   height: 100%;
-}*/
+}
+
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+h3 {
+  margin:  0;
+}
+p {
+  margin: 0;
+}
+
+.mat-card-header-text {
+  margin:  0!important;
+}
+
+.mat-button-toggle-appearance-standard .mat-button-toggle-label-content {
+  width: 90%;
 }

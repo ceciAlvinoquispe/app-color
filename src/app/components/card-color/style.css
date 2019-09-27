@@ -1,0 +1,36 @@
+mat-button-toggle-group {
+  border:  none;
+}
+
+mat-button-toggle {
+  width: 300px;
+  margin: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc !important;
+}
+mat-button-toggle div:first-child {
+  text-align: left;
+}
+mat-button-toggle div:last-child {
+  text-align: right;
+}
+
+button {
+  width: 100%;
+}
+
+
+
+mat-card {
+  margin: 10px;
+  width: 350px;
+}
+
+mat-card-content {
+  text-align: center
+}
+mat-card-actions {
+  margin-right: 0 !important;
+  margin-bottom: 0 !important;
+  text-align: right;
+}
