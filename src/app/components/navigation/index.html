@@ -1,9 +1,9 @@
-<button mat-raised-button>
+<button mat-raised-button (click)="prev()" [disabled]="minPage">
   <mat-icon>navigate_before</mat-icon>
   Anterior
 </button>
 
-<button mat-raised-button>
+<button mat-raised-button (click)="next()" [disabled]="maxPage">
   Siguiente
   <mat-icon>navigate_next</mat-icon>
 </button>

@@ -10,6 +10,10 @@ const optionsHeaders = {
   })
 };
 
+interface configObject {
+  page?: number;
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -20,10 +24,12 @@ export class ApiService {
   ) { }
 
   getColors() {
-    let params = [
-      '?page=' + 2
-    ];
 
-    return this.http.get<any>(URL + params.join('&'), optionsHeaders);
+    return this.http.get<any>(URL, optionsHeaders);
+  }
+
+  nextPage(page: string) {
+
+    return this.http.get<any>(URL + `?page=${page}`, optionsHeaders);
   }
 }

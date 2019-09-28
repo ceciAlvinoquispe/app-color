@@ -1,9 +1,13 @@
 mat-button-toggle-group {
   border:  none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 mat-button-toggle {
-  width: 300px;
+  width: calc(90% / 3);
   margin: 10px;
   border-radius: 4px;
   border: 1px solid #ccc !important;
@@ -17,20 +21,4 @@ mat-button-toggle div:last-child {
 
 button {
   width: 100%;
-}
-
-
-
-mat-card {
-  margin: 10px;
-  width: 350px;
-}
-
-mat-card-content {
-  text-align: center
-}
-mat-card-actions {
-  margin-right: 0 !important;
-  margin-bottom: 0 !important;
-  text-align: right;
 }

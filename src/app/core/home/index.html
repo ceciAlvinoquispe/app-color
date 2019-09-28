@@ -1,9 +1,9 @@
-<p>hihihi</p>
 <app-head></app-head>
-<app-title></app-title>
 
 <div class="gallery">
-  <card-color></card-color>
+  <card-color [data]="listColor"></card-color>
 </div>
 
-<app-navigation></app-navigation>
+<app-navigation (before)="prevPage($event)"
+                (after)="nextPage($event)"
+                [maxPage]="this._page > 1"></app-navigation>
