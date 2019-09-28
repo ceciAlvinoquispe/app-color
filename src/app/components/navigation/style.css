@@ -1,0 +1,15 @@
+.section-btn {
+  background: white;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-btn button {
+  margin: 0 20px;
+}

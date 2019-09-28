@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'card-color',
@@ -10,15 +10,15 @@ export class CardColorComponent implements OnInit {
   @Input()
   set data(list) {
     if (list) {
-      console.log('lista', list);
       let i = '';
       let data = {};
       for (i in list) {
         this.color[i] = list[i];
       }
-      console.log('data', this.color);
     }
   }
+
+  @Output() colorData = new EventEmitter();
 
   color: Array<object> = [];
 
@@ -27,5 +27,9 @@ export class CardColorComponent implements OnInit {
   }
   ngOnInit() {
 
+  }
+
+  copyValue(event) {
+    this.colorData.emit(event);
   }
 }

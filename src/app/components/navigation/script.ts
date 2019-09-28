@@ -9,8 +9,8 @@ export class NavigationComponent implements OnInit {
 
   @Output() before = new EventEmitter<any>();
   @Output() after = new EventEmitter<any>();
-  @Input() minPage: boolean = true;
-  @Input() maxPage: boolean = false;
+  @Input() minPage: boolean;
+  @Input() maxPage: boolean;
 
   constructor() {
 

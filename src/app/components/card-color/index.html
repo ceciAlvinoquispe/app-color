@@ -1,10 +1,12 @@
 <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-  <mat-button-toggle *ngFor="let element of color">
+  <mat-button-toggle *ngFor="let element of color"
+                      (click)="copyValue(element)"
+                      [ngStyle]="{'background-color':  element['color']}">
     <div>
       <p>{{ element['year'] }}</p>
     </div>
     <div>
-      <p>{{ element['name'] }}sand dolla</p>
+      <p>{{ element['name'] }}</p>
       <h3>{{ element['color'] }}</h3>
     </div>
     <div>

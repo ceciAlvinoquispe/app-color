@@ -1,9 +1,10 @@
-<app-head></app-head>
+<div class="principal">
+  <app-head></app-head>
 
-<div class="gallery">
-  <card-color [data]="listColor"></card-color>
+  <card-color [data]="listColor" (colorData)="infoColor($event)"></card-color>
+
+  <app-navigation (before)="prevPage($event)"
+                  (after)="nextPage($event)"
+                  [minPage]="_page == 1"
+                  [maxPage]="_page > 1"></app-navigation>
 </div>
-
-<app-navigation (before)="prevPage($event)"
-                (after)="nextPage($event)"
-                [maxPage]="this._page > 1"></app-navigation>

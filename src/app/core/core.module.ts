@@ -7,12 +7,14 @@ import { HeadComponent } from '@app/components/head/script';
 import { TitleComponent } from '@app/components/title/script';
 import { CardColorComponent } from '@app/components/card-color/script';
 import { NavigationComponent } from '@app/components/navigation/script';
+import { CopyConfirmComponent } from '@app/components/copy-confirm/script';
 
 import {
   MatCardModule,
   MatButtonModule,
   MatIconModule,
-  MatButtonToggleModule
+  MatButtonToggleModule,
+  MatDialogModule
 } from '@angular/material';
 
 @NgModule({
@@ -21,7 +23,8 @@ import {
     HeadComponent,
     TitleComponent,
     CardColorComponent,
-    NavigationComponent
+    NavigationComponent,
+    CopyConfirmComponent
   ],
   imports: [
     CommonModule,
@@ -29,7 +32,11 @@ import {
     MatCardModule,
     MatButtonModule,
     MatIconModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatDialogModule
+  ],
+  entryComponents: [
+    CopyConfirmComponent
   ]
 })
 export class CoreModule { }

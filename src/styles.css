@@ -1,11 +1,13 @@
 html,
 body {
   height: 100%;
+  background-color: #ccc;
 }
 
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  position: relative;
 }
 
 html, body { height: 100%; }
@@ -18,10 +20,27 @@ p {
   margin: 0;
 }
 
+home {
+  position: relative;
+}
 .mat-card-header-text {
   margin:  0!important;
 }
 
 .mat-button-toggle-appearance-standard .mat-button-toggle-label-content {
   width: 90%;
+}
+
+mat-dialog-container {
+  padding: 0!important;
+}
+
+@media only screen and (max-width: 40em) {
+  .modal {
+    height: 250px!important;
+    width: 300px!important;
+  }
+  .modal p {
+    margin:  0 20px!important;
+  }
 }
